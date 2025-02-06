@@ -8,3 +8,7 @@ export default function Home() {
     </main>
   )
 }
+
+
+// / route home 
+// App will render navbar and footer components on every route.
