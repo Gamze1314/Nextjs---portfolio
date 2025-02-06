@@ -2,10 +2,10 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <p>Hello World</p>
       <Link href="/users">Users</Link>
-    </main>
+    </div>
   )
 }
 
