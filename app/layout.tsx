@@ -1,4 +1,4 @@
-// app/layout.tsx
+// app/layout.tsx, responsible for wrapping the entire app in a layout structure that includes styling, fonts, and providers.
 import './globals.css';
 import { Inter } from 'next/font/google';
 // import navbar from '../components/navbar';
