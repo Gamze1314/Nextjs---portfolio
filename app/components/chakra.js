@@ -3,8 +3,9 @@
 
 import { ChakraProvider } from "@chakra-ui/react";
 
-function Providers({ children }: { children: React.ReactNode }) {
-  return <ChakraProvider value={theme}>{children}</ChakraProvider>;  // no value required
+
+function Providers({ children }) {
+  return <ChakraProvider>{children}</ChakraProvider>;  // no value required
 }
 
 export default Providers;

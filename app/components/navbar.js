@@ -1,14 +1,6 @@
 'use client'
 
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Stack,
-  Text,
-  useColorModeValue
-} from '@chakra-ui/react'
+
 import Link from 'next/link'
 import { usePathname } from "next/navigation";
 
@@ -17,20 +9,28 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav>
-      <Link className={`${pathname === "/" ? "active" : ""}`} href="/">
-        Home
-      </Link>
-      <Link className={`${pathname === "/blogs" ? "active" : ""}`} href="/blogs">
-        Blogs
-      </Link>
-      <Link className={`${pathname === "/about" ? "active" : ""}`} href="/projets">
-        Projects
-      </Link>
-      <Link className={`${pathname === "/contact" ? "active" : ""}`} href="/contact">
-        Contact
-      </Link>
-    </nav>
+    <div className="w-full h-20 bg-emerald-800 sticky top-0 flex items-center">
+      <div className="flex space-x-6 text-white text-lg ml-auto mr-20">
+        <Link href="/">
+          Home
+        </Link>
+        <Link
+          href="/blogs"
+        >
+          Blogs
+        </Link>
+        <Link
+          href="/projects"
+        >
+          Projects
+        </Link>
+        {/* <Link
+          href="/contact"
+        >
+          Contact
+        </Link> */}
+      </div>
+    </div>
   );
 }
 
