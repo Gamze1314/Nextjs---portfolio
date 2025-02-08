@@ -1,12 +1,17 @@
 // app/layout.tsx, responsible for wrapping the entire app in a layout structure that includes styling, fonts, and providers.
 import './globals.css';
 import { Inter } from 'next/font/google';
-// import navbar from '../components/navbar';
-// import footer from '../components/footer';
-import { Provider } from "@/components/ui/provider" // provider for the styling system.
-// theme provider for next-themes for color mode
+import NavBar from './components/navbar';
+import Footer from './components/footer';
+import Providers from "./components/chakra";
 
 const inter = Inter({ subsets: ['latin'] }); // inter font settings
+
+// SEO
+export const metadata = {
+  title: "Gamze Kandara",
+  description: "Gamze Kandara's portfolio",
+}
 
 export default function RootLayout({
   children,
@@ -14,16 +19,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        {/* <navbar /> */}
-        <Provider>{children}</Provider> {/* This is where page-specific content will be rendered */}
-        {/* <footer /> */}
+      <Providers>
+        <NavBar />
+        {children}
+        <Footer />
+      </Providers>
       </body>
     </html>
   );
 }
-
 
 
 // layout.tsx files created automatically for each page if it s not created before running the dev server. 

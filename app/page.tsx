@@ -1,10 +1,11 @@
-import Link from 'next/link'
+'use client'
+
+// Home component
 
 export default function Home() {
   return (
     <div>
       <p>Hello World</p>
-      <Link href="/users">Users</Link>
     </div>
   )
 }
