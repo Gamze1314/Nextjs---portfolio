@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import NavBar from './components/navbar';
 import Footer from './components/footer';
 import Provider from './components/chakra';
+import SideBar from './components/sidebar';
 
 const inter = Inter({ subsets: ['latin'] }); // inter font settings
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <NavBar />
         <Provider>{children}</Provider>
+        <SideBar />
         <Footer />
       </body>
     </html>

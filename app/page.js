@@ -5,7 +5,7 @@ import { Box } from "@chakra-ui/react";
 
 const Home = () => {
   return (
-    <Box bg="blue.500" p={4} className="text-white">
+    <Box p={8} className="text-white">
       This is a Chakra UI Box component with a Tailwind class applied.
     </Box>
   );
