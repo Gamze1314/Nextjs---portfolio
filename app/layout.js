@@ -3,6 +3,7 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import NavBar from './components/navbar';
 import Footer from './components/footer';
+import Provider from './components/chakra';
 
 const inter = Inter({ subsets: ['latin'] }); // inter font settings
 
@@ -18,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body>
         <NavBar />
-        {children}
+        <Provider>{children}</Provider>
         <Footer />
       </body>
     </html>
