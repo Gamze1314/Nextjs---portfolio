@@ -10,9 +10,9 @@ export default function SideBar() {
       left="0"
       top="0"
       height="150vh"
-      width="80px"
-      bg="gray.900"
-      color="black"
+      width="40px"
+      bg="white"
+      color="green"
       p={4}
       display="flex"
       justifyContent="center"
@@ -20,18 +20,21 @@ export default function SideBar() {
       boxShadow="lg"
       zIndex="1000"
     >
-      <VStack spacing={6}>
-        <Link href="https://linkedin.com" isExternal>
-          <Icon as={FaLinkedin} boxSize={30} _hover={{ color: "blue.400" }} />
+      <VStack spacing={4}>
+        <Link href="https://www.linkedin.com/in/gamzekandara/" isExternal>
+          <Icon
+            as={FaLinkedin}
+            boxSize={15}
+          />
         </Link>
-        <Link href="https://x.com" isExternal>
-          <Icon as={FaXTwitter} boxSize={30} _hover={{ color: "gray.400" }} />
+        <Link href="https://x.com/GamzeKandara" isExternal>
+          <Icon as={FaXTwitter} boxSize={15} />
         </Link>
-        <Link href="https://github.com" isExternal>
-          <Icon as={FaGithub} boxSize={30} _hover={{ color: "gray.500" }} />
+        <Link href="https://github.com/Gamze1314" isExternal>
+          <Icon as={FaGithub} boxSize={15} />
         </Link>
-        <Link href="https://medium.com" isExternal>
-          <Icon as={FaMedium} boxSize={30} _hover={{ color: "green.400" }} />
+        <Link href="https://medium.com/me/stories/public" isExternal>
+          <Icon as={FaMedium} boxSize={15} />
         </Link>
       </VStack>
     </Box>
