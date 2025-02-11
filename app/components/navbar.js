@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Flex, Link } from "@chakra-ui/react";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -9,16 +9,17 @@ export default function Navbar() {
   return (
     <Box
       as="nav"
-      position="fixed"
+      // position="fixed"
       top="0"
       left="0"
-      width="100%"
+      width="140%"
       bg="gray.900"
       color="black"
-      py={3}
-      px={6}
+      fontSize="xs"
+      py={2}
+      px={8}
       mb={6}
-      mt={6}
+      mt={0}
       zIndex="1000"
     >
       <Flex justify="center" align="center" wrap="wrap">
@@ -29,26 +30,32 @@ export default function Navbar() {
           align="center"
           gap={8}
         >
-          <Link
-            href="/"
-            _hover={{ textDecoration: "none", color: "cyan.400" }}
-            fontSize="lg"
-          >
-            Home
+          <Link href="/">
+            <Text
+              color="black"
+              _hover={{ textDecoration: "none", color: "green" }}
+              fontSize="xs"
+            >
+              Home
+            </Text>
           </Link>
-          <Link
-            href="/blogs"
-            _hover={{ textDecoration: "none", color: "cyan.400" }}
-            fontSize="lg"
-          >
-            Blogs
+          <Link href="/blogs">
+            <Text
+              color="black"
+              _hover={{ textDecoration: "none", color: "green" }}
+              fontSize="xs"
+            >
+              Blog
+            </Text>
           </Link>
-          <Link
-            href="/projects"
-            _hover={{ textDecoration: "none", color: "cyan.400" }}
-            fontSize="lg"
-          >
-            Projects
+          <Link href="/projects">
+            <Text
+              color="black"
+              _hover={{ textDecoration: "none", color: "green" }}
+              fontSize="xs"
+            >
+              Projects
+            </Text>
           </Link>
         </Flex>
       </Flex>
