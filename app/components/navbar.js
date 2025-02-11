@@ -1,6 +1,11 @@
 "use client";
 
-import { Box, Flex, Link, Text } from "@chakra-ui/react";
+import { 
+  Box, 
+  Flex, 
+  Link, 
+  Text, 
+} from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -9,7 +14,7 @@ export default function Navbar() {
   return (
     <Box
       as="nav"
-      // position="fixed"
+      position="fixed"
       top="0"
       left="0"
       width="140%"
@@ -19,7 +24,7 @@ export default function Navbar() {
       py={2}
       px={8}
       mb={6}
-      mt={0}
+      mt={6}
       zIndex="1000"
     >
       <Flex justify="center" align="center" wrap="wrap">
@@ -28,13 +33,14 @@ export default function Navbar() {
           listStyleType="none"
           justify="center"
           align="center"
-          gap={8}
+          gap={15}
         >
           <Link href="/">
             <Text
               color="black"
-              _hover={{ textDecoration: "none", color: "green" }}
-              fontSize="xs"
+              _hover={{ color: "green" }}
+              fontSize="xs" // Use fontSize instead of textStyle
+              fontWeight="medium"
             >
               Home
             </Text>
@@ -42,8 +48,9 @@ export default function Navbar() {
           <Link href="/blogs">
             <Text
               color="black"
-              _hover={{ textDecoration: "none", color: "green" }}
-              fontSize="xs"
+              _hover={{ color: "green" }}
+              textStyle="xs"
+              fontWeight="medium"
             >
               Blog
             </Text>
@@ -51,8 +58,9 @@ export default function Navbar() {
           <Link href="/projects">
             <Text
               color="black"
-              _hover={{ textDecoration: "none", color: "green" }}
-              fontSize="xs"
+              _hover={{ color: "green" }}
+              textStyle="xs"
+              fontWeight="medium"
             >
               Projects
             </Text>

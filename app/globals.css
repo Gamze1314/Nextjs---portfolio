@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-rgb: 0, 0, 0;
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-rgb)); /* Ensures full black */
-  min-height: 100vh; /* Ensures the full viewport is covered */
-  padding: 1rem;
+    font: normal 10px Verdana, Arial, sans-serif;
 }
