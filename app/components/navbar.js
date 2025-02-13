@@ -37,16 +37,6 @@ export default function Navbar() {
               Home
             </Text>
           </Link>
-          {/* <Link href="#about" scrollBehavior="smooth">
-            <Text
-              color="black"
-              _hover={{ color: "green" }}
-              fontSize="xs"
-              fontWeight="medium"
-            >
-              About
-            </Text>
-          </Link> */}
           <Link href="#experience" scrollBehavior="smooth">
             <Text
               color="black"
@@ -57,16 +47,6 @@ export default function Navbar() {
               Experience
             </Text>
           </Link>
-          {/* <Link href="#skills" scrollBehavior="smooth">
-            <Text
-              color="black"
-              _hover={{ color: "green" }}
-              fontSize="xs"
-              fontWeight="medium"
-            >
-              Skills
-            </Text>
-          </Link> */}
           <Link href="#projects" scrollBehavior="smooth">
             <Text
               color="black"
@@ -75,6 +55,16 @@ export default function Navbar() {
               fontWeight="medium"
             >
               Projects
+            </Text>
+          </Link>
+          <Link href="#Contact" scrollBehavior="smooth">
+            <Text
+              color="black"
+              _hover={{ color: "green" }}
+              fontSize="xs"
+              fontWeight="medium"
+            >
+              Contact
             </Text>
           </Link>
         </Flex>
