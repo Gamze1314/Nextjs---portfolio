@@ -1,30 +1,110 @@
-'use client'
+"use client";
 
-// Home component
-import { Box, Text, Flex } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 const Home = () => {
   return (
-    <Flex
-      direction="column"
-      justify="center"
-      align="left"
-      height="350"
-      width="300px"
-      p={12}
-      ml={12}
-      className="text-black"
-    >
-      <Text color="green" fontStyle="sm">Hi, my name is</Text>
-      <Text fontSize="2xl" fontWeight="bold">
-        Gamze Kandara.
-      </Text>
-      <Text fontSize="lg">Building the web, better.</Text>
-    </Flex>
+    <>
+      <Box id="home" as="section">
+        <Flex
+          direction="column"
+          justify="center"
+          alignItems="flex-start"
+          height="370px"
+          width="420px"
+          p={12}
+          ml={12}
+          className="text-black"
+        >
+          <Text color="green" fontSize="md">
+            Hi, my name is
+          </Text>
+          <Text fontSize="3xl" fontWeight="bold">
+            Gamze Kandara
+          </Text>
+          <Text fontSize="xl" color="gray" mb={5}>
+            Building the web, better.
+          </Text>
+          <Text fontSize="xs" color="gray">
+            Innovating the web with purpose and precision. As a full-stack
+            engineer, I create accessible, user-friendly digital experiences
+            that leave a lasting impact.
+          </Text>
+        </Flex>
+      </Box>
+
+      <Box id="about" as="section">
+        <Flex
+          direction="column"
+          justify="center"
+          alignItems="flex-start"
+          height="340px"
+          width="420px"
+          p={12}
+          ml={12}
+          className="text-black"
+        >
+          <Text color="green" fontSize="md">
+            About Me
+          </Text>
+        </Flex>
+      </Box>
+
+      <Box id="experience" as="section">
+        <Flex
+          direction="column"
+          justify="center"
+          alignItems="flex-start"
+          height="340px"
+          width="420px"
+          p={12}
+          ml={12}
+          className="text-black"
+        >
+          <Text color="green" fontSize="md">
+            Experience
+          </Text>
+        </Flex>
+      </Box>
+
+      <Box id="skills" as="section">
+        <Flex
+          direction="column"
+          justify="center"
+          alignItems="flex-start"
+          height="340px"
+          width="420px"
+          p={12}
+          ml={12}
+          className="text-black"
+        >
+          <Text color="green" fontSize="md">
+            Skills
+          </Text>
+        </Flex>
+      </Box>
+
+      <Box id="projects" as="section">
+        <Flex
+          direction="column"
+          justify="center"
+          alignItems="flex-start"
+          height="340px"
+          width="420px"
+          p={12}
+          ml={12}
+          className="text-black"
+        >
+          <Text color="green" fontSize="md">
+            Things I Have Worked On
+          </Text>
+        </Flex>
+      </Box>
+    </>
   );
 };
 
 export default Home;
 
-// / route home 
+// / route home
 // App will render navbar and footer components on every route.

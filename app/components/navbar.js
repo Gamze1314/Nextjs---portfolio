@@ -1,16 +1,8 @@
 "use client";
 
-import { 
-  Box, 
-  Flex, 
-  Link, 
-  Text, 
-} from "@chakra-ui/react";
-import { usePathname } from "next/navigation";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
 
 export default function Navbar() {
-  const pathname = usePathname();
-
   return (
     <Box
       as="nav"
@@ -35,31 +27,51 @@ export default function Navbar() {
           align="center"
           gap={15}
         >
-          <Link href="/">
+          <Link href="#home" scrollBehavior="smooth">
             <Text
               color="black"
               _hover={{ color: "green" }}
-              fontSize="xs" // Use fontSize instead of textStyle
+              fontSize="xs"
               fontWeight="medium"
             >
               Home
             </Text>
           </Link>
-          <Link href="/blogs">
+          {/* <Link href="#about" scrollBehavior="smooth">
             <Text
               color="black"
               _hover={{ color: "green" }}
-              textStyle="xs"
+              fontSize="xs"
               fontWeight="medium"
             >
-              Blog
+              About
             </Text>
-          </Link>
-          <Link href="/projects">
+          </Link> */}
+          <Link href="#experience" scrollBehavior="smooth">
             <Text
               color="black"
               _hover={{ color: "green" }}
-              textStyle="xs"
+              fontSize="xs"
+              fontWeight="medium"
+            >
+              Experience
+            </Text>
+          </Link>
+          {/* <Link href="#skills" scrollBehavior="smooth">
+            <Text
+              color="black"
+              _hover={{ color: "green" }}
+              fontSize="xs"
+              fontWeight="medium"
+            >
+              Skills
+            </Text>
+          </Link> */}
+          <Link href="#projects" scrollBehavior="smooth">
+            <Text
+              color="black"
+              _hover={{ color: "green" }}
+              fontSize="xs"
               fontWeight="medium"
             >
               Projects
