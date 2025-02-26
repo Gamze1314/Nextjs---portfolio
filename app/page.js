@@ -1,6 +1,10 @@
 "use client";
 
 import { Box, Flex, Text } from "@chakra-ui/react";
+import About from "./components/about";
+import Experience from "./components/experience";
+import Skills from "./components/skills";
+import Projects from "./components/projects";
 
 const Home = () => {
   return (
@@ -47,6 +51,7 @@ const Home = () => {
           <Text color="green" fontSize="md">
             About Me
           </Text>
+          <About />
         </Flex>
       </Box>
 
@@ -64,6 +69,7 @@ const Home = () => {
           <Text color="green" fontSize="md">
             Experience
           </Text>
+          <Experience />
         </Flex>
       </Box>
 
@@ -81,6 +87,7 @@ const Home = () => {
           <Text color="green" fontSize="md">
             Skills
           </Text>
+          <Skills />
         </Flex>
       </Box>
 
@@ -98,6 +105,7 @@ const Home = () => {
           <Text color="green" fontSize="md">
             Things I Have Worked On
           </Text>
+          <Projects />
         </Flex>
       </Box>
     </>
