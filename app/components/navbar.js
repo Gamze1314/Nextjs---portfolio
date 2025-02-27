@@ -13,16 +13,16 @@ export default function Navbar() {
       bg="white"
       color="black"
       fontSize="xs"
-      py={2}
-      px={8}
+      py={1}
+      px={1}
       mb={6}
-      mt={6}
+      mt={0}
       zIndex="1000"
     >
       <Flex align="center" wrap="wrap">
-        <HStack className="pl-22 mr-95 font-semibold text-green-700 text-lg">
+        <HStack className="pl-22 mr-95 mt-1 text-gray-700 text-xs">
           {/* name prop displays initials */}
-          <Avatar name="Gamze Kandara" colorpalette="gray" variant="subtle">
+          <Avatar name="Gamze Kandara" colorpalette="gray" variant="subtle" size="xs">
           </Avatar>
         </HStack>
         <Flex
@@ -37,7 +37,6 @@ export default function Navbar() {
               color="black"
               _hover={{ color: "green" }}
               fontSize="xs"
-              fontWeight="medium"
             >
               Home
             </Text>
@@ -47,7 +46,6 @@ export default function Navbar() {
               color="black"
               _hover={{ color: "green" }}
               fontSize="xs"
-              fontWeight="medium"
             >
               Experience
             </Text>
@@ -57,7 +55,6 @@ export default function Navbar() {
               color="black"
               _hover={{ color: "green" }}
               fontSize="xs"
-              fontWeight="medium"
             >
               Projects
             </Text>
@@ -67,7 +64,6 @@ export default function Navbar() {
               color="black"
               _hover={{ color: "green" }}
               fontSize="xs"
-              fontWeight="medium"
             >
               Contact
             </Text>

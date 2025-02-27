@@ -19,7 +19,7 @@ const Footer = () => {
         align="center"
         wrap="wrap"
         w="100%"
-        h="100%" // Ensures full height for centering vertically
+        h="50%" // Ensures full height for centering vertically
       >
         <Text color="gray" fontSize="xs">
           &copy; {new Date().getFullYear()} Gamze Kandara. All rights reserved.
