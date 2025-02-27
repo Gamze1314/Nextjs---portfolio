@@ -20,13 +20,13 @@ const Home = () => {
           ml={12}
           className="text-black"
         >
-          <Text color="green" fontSize="md">
+          <Text color="green" fontWeight="bold" fontSize="xs">
             Hi, my name is
           </Text>
           <Text fontSize="3xl" fontWeight="bold">
             Gamze Kandara
           </Text>
-          <Text fontSize="xl" color="gray" mb={5}>
+          <Text fontSize="xl" fontWeight="bold" color="gray" mb={3}>
             Building the web, better.
           </Text>
           <Text fontSize="xs" color="gray">
@@ -42,15 +42,12 @@ const Home = () => {
           direction="column"
           justify="center"
           alignItems="flex-start"
-          height="340px"
+          height="350px"
           width="420px"
           p={12}
           ml={12}
           className="text-black"
         >
-          <Text color="green" fontSize="md">
-            About Me
-          </Text>
           <About />
         </Flex>
       </Box>
@@ -66,9 +63,6 @@ const Home = () => {
           ml={12}
           className="text-black"
         >
-          <Text color="green" fontSize="md">
-            Experience
-          </Text>
           <Experience />
         </Flex>
       </Box>
@@ -84,9 +78,6 @@ const Home = () => {
           ml={12}
           className="text-black"
         >
-          <Text color="green" fontSize="md">
-            Skills
-          </Text>
           <Skills />
         </Flex>
       </Box>
@@ -102,9 +93,6 @@ const Home = () => {
           ml={12}
           className="text-black"
         >
-          <Text color="green" fontSize="md">
-            Things I Have Worked On
-          </Text>
           <Projects />
         </Flex>
       </Box>
