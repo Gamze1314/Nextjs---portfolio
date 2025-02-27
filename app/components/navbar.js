@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Flex, Link, Text, Avatar, HStack } from "@chakra-ui/react";
+import { Box, Flex, Link, Text, Avatar, HStack , Circle, Float } from "@chakra-ui/react";
 
 export default function Navbar() {
   return (
@@ -22,10 +22,8 @@ export default function Navbar() {
       <Flex align="center" wrap="wrap">
         <HStack className="pl-22 mr-95 font-semibold text-green-700 text-lg">
           {/* name prop displays initials */}
-          <Avatar
-            shape="rounded"
-            name="Gamze Kandara"
-          />
+          <Avatar name="Gamze Kandara" colorpalette="gray" variant="subtle">
+          </Avatar>
         </HStack>
         <Flex
           as="ul"
