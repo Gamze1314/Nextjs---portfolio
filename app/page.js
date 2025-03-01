@@ -63,66 +63,10 @@ const Home = () => {
           />
         </Flex>
       </Box>
-      {/* About Section */}
-      <Box id="about" as="section">
-        <Flex
-          direction="column"
-          justify="center"
-          alignItems="flex-start"
-          height="350px"
-          width="420px"
-          p={12}
-          ml={12}
-          className="text-black"
-        >
-          <About />
-        </Flex>
-      </Box>
-
-      <Box id="experience" as="section">
-        <Flex
-          direction="column"
-          justify="center"
-          alignItems="flex-start"
-          height="340px"
-          width="420px"
-          p={12}
-          ml={12}
-          className="text-black"
-        >
-          <Experience />
-        </Flex>
-      </Box>
-
-      <Box id="skills" as="section">
-        <Flex
-          direction="column"
-          justify="center"
-          alignItems="flex-start"
-          height="340px"
-          width="420px"
-          p={12}
-          ml={12}
-          className="text-black"
-        >
-          <Skills />
-        </Flex>
-      </Box>
-
-      <Box id="projects" as="section">
-        <Flex
-          direction="column"
-          justify="center"
-          alignItems="flex-start"
-          height="340px"
-          width="420px"
-          p={12}
-          ml={12}
-          className="text-black"
-        >
-          <Projects />
-        </Flex>
-      </Box>
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
     </>
   );
 };

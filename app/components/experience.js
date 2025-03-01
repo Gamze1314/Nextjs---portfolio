@@ -13,6 +13,7 @@ const Experience = () => {
         width="420px"
         p={12}
         ml={4}
+        mb={270}
         className="text-black"
       >
         <Text color="green" fontWeight="bold" fontSize="md">

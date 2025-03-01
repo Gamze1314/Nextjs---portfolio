@@ -18,16 +18,6 @@ const Projects = () => {
         <Text color="green" fontWeight="bold" fontSize="md">
           My Projects
         </Text>
-        <Text fontSize="xs" color="gray">
-          Hi there!, I'm Gamze Kandara, a full-stack developer specializing in
-          JavaScript, React, Python and Flask. My passion lies in developing
-          efficient web applications, managing SQL databases, and ensuring
-          seamless deployment. I am committed to creating dynamic, scalable, and
-          user-centric web applications using modern technologies. Looking
-          forward to sharpening my skills in a challenging environment. I
-          guarantee enthusiasm in work and fulfilling my projects with
-          inexpressible effort.
-        </Text>
       </Flex>
     </Box>
   );
