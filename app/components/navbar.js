@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Flex, Link, Text, Avatar, HStack , Circle, Float } from "@chakra-ui/react";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
 
 export default function Navbar() {
   return (
@@ -8,63 +8,42 @@ export default function Navbar() {
       as="nav"
       position="fixed"
       top="0"
-      left="0"
-      width="140%"
+      left="50%"
+      transform="translateX(-50%)"
+      width="100%"
+      maxWidth="800px" // Adjust for responsiveness
       bg="white"
       color="black"
       fontSize="xs"
-      py={1}
-      px={1}
-      mb={6}
-      mt={0}
+      py={2}
+      px={4}
       zIndex="1000"
     >
-      <Flex align="center" wrap="wrap">
-        <HStack className="pl-22 mr-95 mt-1 text-gray-700 text-xs">
-          {/* name prop displays initials */}
-          <Avatar name="Gamze Kandara" colorpalette="gray" variant="subtle" size="xs">
-          </Avatar>
-        </HStack>
+      <Flex justify="center" align="center">
         <Flex
           as="ul"
           listStyleType="none"
           justify="center"
           align="center"
-          gap={15}
+          gap={10} // Adjust spacing as needed
         >
           <Link href="#home" scrollBehavior="smooth">
-            <Text
-              color="black"
-              _hover={{ color: "green" }}
-              fontSize="xs"
-            >
+            <Text color="black" _hover={{ color: "green" }} fontSize="sm">
               Home
             </Text>
           </Link>
           <Link href="#experience" scrollBehavior="smooth">
-            <Text
-              color="black"
-              _hover={{ color: "green" }}
-              fontSize="xs"
-            >
+            <Text color="black" _hover={{ color: "green" }} fontSize="sm">
               Experience
             </Text>
           </Link>
           <Link href="#projects" scrollBehavior="smooth">
-            <Text
-              color="black"
-              _hover={{ color: "green" }}
-              fontSize="xs"
-            >
+            <Text color="black" _hover={{ color: "green" }} fontSize="sm">
               Projects
             </Text>
           </Link>
           <Link href="#contact" scrollBehavior="smooth">
-            <Text
-              color="black"
-              _hover={{ color: "green" }}
-              fontSize="xs"
-            >
+            <Text color="black" _hover={{ color: "green" }} fontSize="sm">
               Contact
             </Text>
           </Link>
