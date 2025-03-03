@@ -9,15 +9,17 @@ export default function Navbar() {
       position="fixed"
       top="0"
       left="50%"
+      alignItems="center"
       transform="translateX(-50%)"
       width="100%"
-      maxWidth="800px" // Adjust for responsiveness
+      maxWidth="800px" // Adjusted for responsiveness
       bg="white"
       color="black"
       fontSize="xs"
       py={2}
       px={4}
       zIndex="1000"
+      display={["none", "flex", "flex"]}
     >
       <Flex justify="center" align="center">
         <Flex

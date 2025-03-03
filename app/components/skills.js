@@ -18,7 +18,6 @@ const Skills = () => {
         <Text color="green" fontWeight="bold" fontSize="xl" mb={2}>
           Skills
         </Text>
-
         {/* FRONTEND SECTION */}
         <Box id="frontend" as="section" p={10} mb={5}>
           <Text color="green" fontWeight="medium" fontSize="sm" mb={4}>
@@ -57,7 +56,6 @@ const Skills = () => {
             />
           </Grid>
         </Box>
-
         {/* BACKEND SECTION */}
         <Box id="backend" as="section" p={10} mb={5}>
           <Text color="green" fontWeight="medium" fontSize="sm" mb={4}>
@@ -84,7 +82,6 @@ const Skills = () => {
             />
           </Grid>
         </Box>
-
         {/* DATABASE SECTION */}
         <Box id="database" as="section" p={10} mb={5}>
           <Text color="green" fontWeight="medium" fontSize="lg" mb={4}>
@@ -111,7 +108,6 @@ const Skills = () => {
             />
           </Grid>
         </Box>
-
         {/* OPS SECTION */}
         <Box id="ops" as="section" p={10} mb={5}>
           <Text color="green" fontWeight="medium" fontSize="md" mb={4}>

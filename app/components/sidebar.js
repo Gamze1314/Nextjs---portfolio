@@ -6,17 +6,16 @@ export default function SideBar() {
   return (
     <Box
       as="section"
-      position="fixed"
-      left="0"
-      top="0"
-      bottom="0"
+      position={["fixed", "fixed", "fixed"]}
+      left={["0", "0", "0"]}
+      top={["1300", "1300", "600"]}
+      bottom={["0", "0", "0"]}
       boxSize={2}
-      height="150vh"
       width="40px"
       bg="white"
       color="black"
       p={4}
-      display="flex"
+      display={["flex", "flex", "flex"]}
       justifyContent="center"
       alignItems="center"
       boxShadow="sm"
