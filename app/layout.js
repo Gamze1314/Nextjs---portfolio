@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body>
         <Provider>
-          <NavBar display={["flex", "flex", "flex"]}/>
+          <NavBar display={["flex", "flex", "flex", "flex"]}/>
           {children}
-          <SideBar display={["flex", "flex", "flex"]}/>
+          <SideBar display={["flex", "flex", "flex", "flex"]}/>
           <Footer />
         </Provider>
       </body>

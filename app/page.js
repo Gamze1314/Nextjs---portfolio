@@ -12,16 +12,16 @@ const Home = () => {
     <>
       <Box
         position="relative"
-        left={["0", "50%", "50%"]} // Adjust left for small screens
+        left={["0", "50%", "50%", "%50"]} // Adjust left for small screens
         transform={["none", "translateX(-50%)", "translateX(-50%)"]} // Adjust transform
         maxWidth="650px"
         minWidth="min-w-24"
-        marginTop={["0", "60px", "60px"]} // Adjust marginTop
+        marginTop={["0", "60px", "60px", "60px"]} // Adjust marginTop
         padding="10px"
       >
         <Box id="home" as="section">
           <Flex
-            direction={["column", "row", "row"]}
+            direction={["column", "row", "row", "row"]}
             justify="center" // Center content horizontally
             alignItems="center"
             height="auto"

@@ -8,7 +8,7 @@ export default function Navbar() {
       as="nav"
       position="fixed"
       top="0"
-      left="50%"
+      left="100%"
       alignItems="center"
       transform="translateX(-50%)"
       width="100%"
@@ -19,7 +19,7 @@ export default function Navbar() {
       py={2}
       px={4}
       zIndex="1000"
-      display={["none", "flex", "flex"]}
+      display={["none", "flex", "flex", "flex"]}
     >
       <Flex justify="center" align="center">
         <Flex
@@ -27,7 +27,7 @@ export default function Navbar() {
           listStyleType="none"
           justify="center"
           align="center"
-          gap={10} // Adjust spacing as needed
+          gap={6} 
         >
           <Link href="#home" scrollBehavior="smooth">
             <Text color="black" _hover={{ color: "green" }} fontSize="sm">
