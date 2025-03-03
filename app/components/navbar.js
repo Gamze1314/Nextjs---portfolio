@@ -36,7 +36,7 @@ export default function Navbar() {
           </Link>
           <Link href="#experience" scrollBehavior="smooth">
             <Text color="black" _hover={{ color: "green" }} fontSize="sm">
-              Experience
+              Timeline
             </Text>
           </Link>
           <Link href="#projects" scrollBehavior="smooth">

@@ -2,7 +2,7 @@
 
 import { Box, Flex, Text, HStack, Avatar } from "@chakra-ui/react";
 import About from "./components/about";
-import Experience from "./components/experience";
+import Timeline from "./components/timeline";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Typical from "react-typical";
@@ -12,8 +12,8 @@ const Home = () => {
     <>
       <Box
         position="relative"
-        left={["0", "50%", "50%", "%50"]} // Adjust left for small screens
-        transform={["none", "translateX(-50%)", "translateX(-50%)"]} // Adjust transform
+        left={["0", "50%", "50%", "%50"]}
+        transform={["none", "translateX(-50%)", "translateX(-50%)"]}
         maxWidth="650px"
         minWidth="min-w-24"
         marginTop={["0", "60px", "60px", "60px"]} // Adjust marginTop
@@ -25,10 +25,11 @@ const Home = () => {
             justify="center" // Center content horizontally
             alignItems="center"
             height="auto"
+            marginLeft="20px"
             className="text-black"
           >
             {/* Text Section */}
-            <Box flex="1" textAlign={["center", "left", "left"]}> {/* Use flex: 1 to make text take available space */}
+            <Box flex="1" textAlign={["center", "left", "left", "left"]}> {/* Use flex: 1 to make text take available space */}
               <Text color="green" fontWeight="bold" fontSize="xs">
                 Hi, my name is
               </Text>
@@ -69,7 +70,7 @@ const Home = () => {
           </Flex>
         </Box>
         <About />
-        <Experience />
+        <Timeline />
         <Skills />
         <Projects />
       </Box>

@@ -6,14 +6,20 @@ const Skills = () => {
   return (
     <Box id="skills" as="section" p={10} textAlign="center">
       <Flex
-        direction="column"
-        justify="center"
-        alignItems="flex-start"
-        height="370px"
-        width="420px"
-        p={12}
-        ml={4}
+        position="relative"
+        direction={["row", "row", "row", "row"]}
+        justify="left"
+        alignItems="left"
+        width={["100%", "6500px", "650px", "650px"]} // Adjust width responsively
+        maxWidth="650px"
+        minWidth="min-w-24"
+        left="50%"
+        transform="translateX(-50%)" // Center horizontally
+        padding="10px"
+        height="auto"
         className="text-black"
+        marginTop = "40px" // add margin top
+        marginLeft= "20px"
       >
         <Text color="green" fontWeight="bold" fontSize="xl" mb={2}>
           Skills

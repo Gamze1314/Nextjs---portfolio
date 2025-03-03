@@ -10,8 +10,8 @@ export default function SideBar() {
       left={["0", "0", "0", "0"]}
       top={["500", "500", "500", "500"]}
       bottom={["0", "0", "0", "0"]}
-      boxSize={2}
-      width="40px"
+      boxSize={1}
+      width="10px"
       bg="white"
       color="black"
       p={4}
